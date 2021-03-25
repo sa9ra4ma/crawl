@@ -65,7 +65,7 @@ try{
           detail['被本塁打'] = table.children[1].children[i].children[14].textContent;
           detail['与四球'] = table.children[1].children[i].children[15].textContent;
           detail['与死球'] = table.children[1].children[i].children[16].textContent;
-          detail['奪三振'] = total.children[17].textContent;
+          detail['奪三振'] = table.children[1].children[i].children[17].textContent;
           detail['暴投'] = table.children[1].children[i].children[18].textContent;
           detail['ボーク'] = table.children[1].children[i].children[19].textContent;
           detail['失点'] = table.children[1].children[i].children[20].textContent;
