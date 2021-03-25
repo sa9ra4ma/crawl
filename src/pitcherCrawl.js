@@ -10,10 +10,11 @@ const detailFile = 'pitcher_detail.txt'
 let summary = {};
 let detail = {};
 
-try{
-  fs.writeFileSync(summaryFile,"");
-  fs.writeFileSync(detailFile,"");
-  (async() => {
+(async() => {
+  try {
+    fs.writeFileSync(summaryFile,"");
+    fs.writeFileSync(detailFile,"");
+
     for (let i = 0; i < teamList.length; i++) {
       // if (i > 0) {return} // コメントを外したら、最初のチームだけ取得する動作確認モード
       // 対象のチームの投手リストページを取得する
@@ -106,11 +107,11 @@ try{
       }
       console.log(`END[${team}]`);
     }
-  })();
-} catch(e) {
-    console.log("err");
-    console.log(e);
-}
+  } catch(e) {
+      console.log("err");
+      console.log(e);
+  }
+})();
 
 
 // ユニーク文字列を生成
